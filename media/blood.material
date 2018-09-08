@@ -1,0 +1,21 @@
+material BloodAnimation
+{
+   technique 
+   {
+      pass 
+      {
+         lighting off
+         depth_write off
+         scene_blend alpha_blend
+         cull_hardware none
+         cull_software none
+
+         texture_unit
+         {
+            anim_texture bloodsplats_0032.png bloodsplats_0033.png bloodsplats_0034.png bloodsplats_0035.png bloodsplats_0036.png bloodsplats_0037.png bloodsplats_0038.png bloodsplats_0039.png bloodsplats_0040.png bloodsplats_0041.png bloodsplats_0042.png bloodsplats_0043.png bloodsplats_0044.png bloodsplats_0045.png bloodsplats_0046.png 2.5
+         }
+      }
+   }
+}
+
+

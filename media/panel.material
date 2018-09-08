@@ -1,0 +1,45 @@
+material panelInfoM 
+{
+ technique 
+ {
+   pass 
+   {
+     scene_blend src_alpha one_minus_src_alpha
+     texture_unit 
+     {
+       texture caraConejo.png
+     }
+   }
+ }
+}
+
+material FlechasM 
+{
+ technique 
+ {
+   pass 
+   {
+     scene_blend src_alpha one_minus_src_alpha
+     texture_unit 
+     {
+       texture arrow-md.png
+     }
+   }
+ }
+}
+
+material CalaveraM 
+{
+ technique 
+ {
+   pass 
+   {
+     scene_blend src_alpha one_minus_src_alpha
+     texture_unit 
+     {
+       texture calavera.png
+     }
+   }
+ }
+}
+

@@ -1,0 +1,87 @@
+template element TextArea(MyTemplates/Text)
+{
+                font_name Blue
+		metrics_mode pixels
+		char_height 100
+		colour 1.0 1.0 1.0    
+}
+
+Info
+{
+    zorder 500
+
+    container Panel(panelInfo) 
+    {
+        metrics_mode pixels
+        left 10
+        top -100
+        width 100
+        height 100
+        vert_align bottom
+        material panelInfoM
+
+
+            element TextArea(vidas) : MyTemplates/Text 
+            {
+                  top 10
+                  left 110 
+            }
+    }
+
+    container Panel(flechasInfo) 
+    {
+        metrics_mode pixels
+        left -110
+        top -100
+        width 100
+        height 100
+        vert_align bottom
+        material FlechasM
+        horz_align right
+
+
+            element TextArea(flechas) : MyTemplates/Text 
+            {
+                  top 10
+                  left -60
+            }
+    }  
+
+    container Panel(bossInfo) 
+    {
+        metrics_mode pixels
+        left -790
+        top -590      
+        width 80
+        height 80
+        vert_align bottom
+        horz_align right
+        material CalaveraM
+
+
+
+            element TextArea(vidaBoss) : MyTemplates/Text 
+            {
+                left 85
+            }
+    }
+
+    container Panel(terminarInfo) 
+    {
+        metrics_mode pixels
+        left -550
+        top -300     
+        width 80
+        height 80
+        vert_align bottom
+        horz_align right
+
+            element TextArea(terminar) : MyTemplates/Text 
+            {
+            }
+    }
+
+
+}
+
+

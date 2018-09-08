@@ -1,0 +1,42 @@
+material FireAnimationMaterial2
+{
+   technique 
+   {
+      pass 
+      {
+         lighting off
+         depth_write off
+         scene_blend alpha_blend
+         cull_hardware none
+         cull_software none
+
+         texture_unit
+         {
+            anim_texture e1.png e2.png e3.png e4.png e5.png e6.png e7.png e8.png e9.png e10.png e11.png e12.png e13.png e14.png e15.png e16.png e17.png e18.png e19.png 2.5
+         }
+      }
+   }
+}
+
+material FireAnimationMaterial
+{
+   technique 
+   {
+      pass 
+      {
+         lighting off
+         depth_write off
+         scene_blend alpha_blend
+         cull_hardware none
+         cull_software none
+
+         texture_unit
+         {
+            anim_texture shields.png explosion0.png explosion1.png explosion2.png 2.5
+         }
+      }
+   }
+}
+
+
+

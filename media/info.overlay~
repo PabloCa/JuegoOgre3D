@@ -1,0 +1,43 @@
+template element TextArea(MyTemplates/Text)
+{
+                font_name Blue
+		metrics_mode pixels
+		char_height 50
+		colour 1.0 1.0 1.0    
+}
+
+Info
+{
+    zorder 500
+
+    container Panel(panelInfo) 
+    {
+ 	metrics_mode pixels
+        left 10
+        top -64
+        width 54
+        height 54
+        vert_align bottom
+        material panelInfoM
+
+		    element TextArea(shootInfo) : MyTemplates/Text 
+		    {
+				  top 14
+				  left 50	 
+		    }
+
+	  }
+	  
+    container Panel(logoUCLM) 
+    {
+	metrics_mode pixels
+        left -180
+        top 0
+        width 150
+        height 120
+        vert_align top
+        horz_align right
+        material matUCLM
+    }	  
+
+}
